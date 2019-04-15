@@ -7,7 +7,7 @@ CREATE TABLE movies(
     director_id INTEGER(120)
 );
 
---Creat a table for directors
+--Create a table for directors
 CREATE TABLE directors(
     director_ID INTEGER PRIMARY KEY AUTO_INCREMENT,
     first VARCHAR(120),
@@ -17,6 +17,7 @@ CREATE TABLE directors(
 
 DROP TABLE movies;
 
+--Created a new 'movies' table that uses Foreign Keys for Director_ID
 CREATE TABLE movies(
     movie_ID INTEGER PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(120),
